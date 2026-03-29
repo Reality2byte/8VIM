@@ -44,7 +44,7 @@ jobs:
     outputs:
       text: ${{steps.msg.outputs.text}}
     steps:
-      - uses: actions/github-script@v7
+      - uses: actions/github-script@v8
         id: msg
         env:
           INPUT_CHANNEL: ${{inputs.channel}}
